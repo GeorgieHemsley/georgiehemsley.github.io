@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .anim {
+            font-size: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            display: inline-block;
+            color: #5c5cff;
+        }
+
+        .active {
+            transform: rotate(25deg);
+            transition: all 400ms ease-in-out;
+        }
+    </style>
+    <title>Final Project</title>
+</head>
+<body>
+    <h1>Final Project</h1>
+    
+
+    <script>
+        const h1 = document.querySelector("h1");
+        const text = h1.innerText.split("")
+        let html = ""
+        
+        text.forEach(chars => {
+            let classes = "space"
+            if(chars !== " ") {
+                classes = "anim"
+            }
+            html = html + `<span class="${classes}">${chars}</span>`
+        })
+
+        h1.innerHTML = html
+
+        const anim = document.querySelectorAll(".anim")
+        anim.forEach(exp => {
+            exp.addEventListener("mouseover", function(event) {
+                this.classList.add("active")
+            })
+            exp.addEventListener("mouseout", function(event) {
+                this.classList.remove("active")
+            })
+        })
+
+        
+
+       
+        
+        
+
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 5</title>
+</head>
+<body>
+    <h1>Mini Project 5 - Event Listeners</h1>
+    <h2>Type values below to see the changes!</h2>
+
+    <div>
+        <label for="bgColor">Background Colour</label>
+        <input type="text" class="bgColor" 
+        style="padding: 10px; border: 1px solid #aaa; margin: 20px; border-radius: 5px;">
+    </div>
+    <div>
+        <label for="textColor">Text Colour</label>
+        <input type="text" class="textColor" 
+        style="padding: 10px; border: 1px solid #aaa; margin: 20px; border-radius: 5px;">
+    </div>
+    <div>
+        <label for="fontSize">Font Size</label>
+        <input type="text" class="fontSize" 
+        style="padding: 10px; border: 1px solid #aaa; margin: 20px; border-radius: 5px;">
+    </div>
+    
+    <script>
+        var bgColor = document.querySelector(".bgColor");
+        var textColor = document.querySelector(".textColor");
+        var fontSize = document.querySelector(".fontSize");
+        var body = document.querySelector("body");
+        
+        bgColor.addEventListener('keyup', function(event) {
+            body.style.backgroundColor = event.target.value;
+        })
+
+        textColor.addEventListener('keyup', function(event) {
+            body.style.color = event.target.value;
+        })
+
+        fontSize.addEventListener('keyup', function(event) {
+            body.style.fontSize = event.target.value + "px";
+        })
+
+    </script>
+
+
+</body>
+</html>

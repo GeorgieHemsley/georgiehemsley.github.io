@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon/snail.png">
+    <title>My Favourite Pets</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 class="logo">My Favourite Pets</h1>
+    <nav>
+        <div class="nav-button"><a href="home.html">Home</a></div>
+        <div class="nav-button"><a href="bagheera.html">Bagheera</a></div>
+        <div class="nav-button"><a href="baxter.html">Baxter</a></div>
+        <div class="nav-button"><a href="popsy_franks_and_murph.html">Popsy, Franks and Murph</a></div>
+    </nav>
+
+    <div class="body">
+        <div class="left-column">
+            <div class="image-card card"><!--Start of Card 1-->
+                <div class="card-image">
+                    <a href="bagheera.html">
+                        <img src="images/bagheera.jpg" alt="Bagheera" title="Bagheera">
+                    </a>
+                </div>
+                <div class="card-title">
+                    <h2>Bagheera</h2>
+                </div>
+                <div class="card-link">
+                    <a href="bagheera.html">
+                        Read about Bagheera
+                    </a>
+                </div>
+                <div class="card-time">
+                    22nd Feb, 2023
+                </div>
+            </div><!--End of Card 1-->
+            <div class="card image-card"><!--Start of Card 2-->
+                <div class="card-image">
+                    <a href="baxter.html">
+                        <img src="images/baxter.jpg" alt="Baxter" title="Baxter">
+                    </a>
+                </div>
+                <div class="card-title">
+                    <h2>Baxter</h2>
+                </div>
+                <div class="card-link">
+                    <a href="baxter.html">
+                        Read about Baxter
+                    </a>
+                </div>
+                <div class="card-time">
+                    15th Feb, 2023
+                </div>
+            </div><!--End of Card 2-->
+            <div class="card image-card"><!--Start of Card 4-->
+                <div class="card-image">
+                    <a href="popsy_franks_and_murph.html">
+                        <img src="images/pops_and_franks.jpg" alt="Popsy, Franks and Murph" title="Popsy, Franks and Murph">
+                    </a>
+                </div>
+                <div class="card-title">
+                    <h2>Popsy, Franks and Murph</h2>
+                </div>
+                <div class="card-link"><a href="popsy_franks_and_murph.html">Read about Popsy, Murph and Frank</a></div>
+                <div class="card-time">31st Jan, 2023</div>
+            </div><!--End of Card 4-->
+        </div>  
+        <div class="right-column"><!--Right Column with Form-->
+            <form method="get" action="" class="form-container">
+                <div class="form">
+                <div class="form-title">
+                    <h2>
+                        Sign Up for Updates!
+                    </h2>
+                </div>
+                <div class="form-items"> 
+                    <label for="firstname">First Name</label> <br />
+                    <input 
+                        name="firstname" 
+                        id="firstname" 
+                        placeholder="first name here"
+                        type="text"
+                        value=""
+                        required="required" /> 
+                </div>
+                <div class="form-items">
+                    <label for="surname">Last Name</label> <br />
+                    <input 
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        placeholder="last name here"
+                        value=""
+                        required="required" /> 
+                </div>
+                <div class="form-items">
+                    <label for="email">Email</label> <br />
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email address here"
+                        value=""
+                        required="required" /> 
+                </div>
+                <div class="form-items">
+                    <label for="phone_number">Phone Number</label> <br />
+                    <input 
+                        type="tel"
+                        id="phone_number"
+                        placeholder="phone number"
+                        name="phone_number"
+                        value=""
+                        required="required" />
+                </div>
+                <div class="form-items">
+                    <label for="select">Where Did You Hear About Us?</label> <br />
+                    <select name="select" id="select" required="required">
+                        <option disabled="disabled" selected="selected">--Select Option--</option>
+                        <option value="1">Search Engine</option>
+                        <option value="2">Facebook</option>
+                        <option value="3">Twitter</option>
+                        <option value="4">Word of Mouth</option>
+                    </select>                               
+                </div>
+                <div class="form-items">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div> <!--end of div class body-->
+<footer>
+    <div class="footer">
+        <div class="contact">
+                <a href="https://www.facebook.com/groups/226407268461242" target="_blank">Facebook Dogspotting Society</a>
+        </div>
+         <div class="contact">
+            <a href="https://www.instagram.com/goldiesglobe" target="_blank">Goldies Globe Instagram</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <h6>
+            &copy; 2023 My Favourite Pets
+        </h6>
+        <h6>
+            Author: Georgie Hemsley
+        </h6>
+        <h6>
+            Last updated: 17/04/2023
+        </h6>
+   </div>
+</footer>
+</body>
+</html>

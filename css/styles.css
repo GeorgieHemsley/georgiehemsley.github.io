@@ -246,7 +246,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #fff;
   text-decoration: underline;
 }
 a:hover {
@@ -1462,7 +1462,7 @@ progress {
   }
   .col-xl-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 50%;
   }
   .col-xl-8 {
     flex: 0 0 auto;
@@ -10879,6 +10879,7 @@ html {
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
+  margin: 15px auto;
 }
 
 .btn-social {
